@@ -1,5 +1,5 @@
 {
-  "baseUrl": "/",
+  "baseUrl": "/docs_template/",
   "locals": {
     "url": "http://localhost:8080",
     "name": "Docs template",
