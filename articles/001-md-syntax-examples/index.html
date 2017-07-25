@@ -8,15 +8,15 @@
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900|Anonymous+Pro:400,700,400italic,700italic&amp;subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css">
-    <link rel="stylesheet" href="/docs_template/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <div class="container">
       <div class="nav-main">
         <div class="wrap">
           <ul class="nav-site nav-site-internal">
-            <li><a href="/docs_template/">Main</a></li>
-            <li><a href="/docs_template/articles/000-instalation/" class="active">Docs</a></li>
+            <li><a href="/">Main</a></li>
+            <li><a href="/articles/000-instalation/" class="active">Docs</a></li>
           </ul><span class="nav-docs-right">Kontaktai:</span>
         </div>
       </div>
@@ -25,25 +25,141 @@
           <div class="nav-docs section">
             <h5>Instaliation</h5>
             <ul>
-              <li><a href="/docs_template/articles/000-instalation/">instruction</a></li>
+              <li><a href="/articles/000-instalation/">instruction</a></li>
             </ul>
           </div>
           <div class="nav-docs section">
             <h5>MD syntax</h5>
             <ul>
-              <li><a href="/docs_template/articles/001-md-syntax-examples/" class="active">MD syntax examples 1</a></li>
-              <li><a href="/docs_template/articles/002-md-syntax-2/">MD syntax highlighting code</a></li>
+              <li><a href="/articles/001-md-syntax-examples/" class="active">MD syntax examples 1</a></li>
+              <li><a href="/articles/002-md-syntax-2/">MD syntax highlighting code</a></li>
             </ul>
           </div>
           <div class="nav-docs section">
             <h5>Group 2</h5>
             <ul>
-              <li><a href="/docs_template/articles/013-example-2/">New group</a></li>
+              <li><a href="/articles/013-example-2/">New group</a></li>
             </ul>
           </div>
         </div>
         <div class="inner-content">
           <h1>MD syntax examples 1</h1>
+          <div class="subHeader"></div><h1 id="an-h1-header">An h1&nbsp;header</h1>
+<p>Paragraphs are separated by a blank&nbsp;line.</p>
+<p>2<span class="ord">nd</span> paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+look&nbsp;like:</p>
+<ul>
+<li>this&nbsp;one</li>
+<li>that&nbsp;one</li>
+<li>the other&nbsp;one</li>
+</ul>
+<p>Note that — not considering the asterisk — the actual text
+content starts at 4-columns&nbsp;in.</p>
+<blockquote>
+<p>Block quotes are
+written like&nbsp;so.</p>
+<p>They can span multiple paragraphs,
+if you&nbsp;like.</p>
+</blockquote>
+<p>Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., “it’s all
+in chapters 12–14”). Three dots … will be converted to an ellipsis.
+Unicode is supported.&nbsp;☺</p>
+<h2 id="an-h2-header">An h2&nbsp;header</h2>
+<p>Here’s a numbered&nbsp;list:</p>
+<ol>
+<li>first&nbsp;item</li>
+<li>second&nbsp;item</li>
+<li>third&nbsp;item</li>
+</ol>
+<p>Note again how the actual text starts at 4 columns in (4 characters
+from the left side). Here’s a code&nbsp;sample:</p>
+<pre><code># Let me re-iterate ...
+for i in 1 .. 10 { do-something(i) }
+</code></pre><p>As you probably guessed, indented 4 spaces. By the way, instead of
+indenting the block, you can use delimited blocks, if you&nbsp;like:</p>
+<pre><code>define foobar() {
+    print &quot;Welcome to flavor country!&quot;;
+}
+</code></pre><p>(which makes copying <span class="amp">&amp;</span> pasting easier). You can optionally mark the
+delimited block for Pandoc to syntax highlight&nbsp;it:</p>
+<pre><code class="lang-python"><span class="keyword">import</span> time
+<span class="comment"># Quick, count to ten!</span>
+<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):
+    <span class="comment"># (but not *too* quick)</span>
+    time.sleep(<span class="number">0.5</span>)
+    <span class="keyword">print</span> i
+</code></pre>
+<h3 id="an-h3-header">An h3&nbsp;header</h3>
+<p>Now a nested&nbsp;list:</p>
+<ol>
+<li><p>First, get these&nbsp;ingredients:</p>
+<ul>
+<li>carrots</li>
+<li>celery</li>
+<li>lentils</li>
+</ul>
+</li>
+<li><p>Boil some&nbsp;water.</p>
+</li>
+<li><p>Dump everything in the pot and follow
+this&nbsp;algorithm:</p>
+<pre><code>find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)
+</code></pre><p>Do not bump wooden spoon or it will&nbsp;fall.</p>
+</li>
+</ol>
+<p>Notice again how text always lines up on 4-space indents (including
+that last line which continues item 3&nbsp;above).</p>
+<p>Here’s a link to <a href="http://foo.bar">a website</a>, to a <a href="/articles/001-md-syntax-examples/local-doc.html">local
+doc</a>, and to a <a href="#an-h2-header">section heading in the current
+doc</a>. Here’s a footnote&nbsp;[^1].</p>
+<p>[^1]: Footnote text goes&nbsp;here.</p>
+<p>Tables can look like&nbsp;this:</p>
+<p>size  material&nbsp;color</p>
+<hr>
+<p>9     leather       brown
+10    hemp canvas   natural
+11    glass&nbsp;transparent</p>
+<p>Table: Shoes, their sizes, and what they’re made&nbsp;of</p>
+<p>(The above is the caption for the table.) Pandoc also supports
+multi-line&nbsp;tables:</p>
+<hr>
+<p>keyword&nbsp;text</p>
+<hr>
+<p>red       Sunsets, apples, and
+          other red or reddish&nbsp;things.</p>
+<p>green     Leaves, grass, frogs
+          and other things it’s
+          not easy&nbsp;being.</p>
+<hr>
+<p>A horizontal rule&nbsp;follows.</p>
+<hr>
+<p>Here’s a definition&nbsp;list:</p>
+<p>apples
+  : Good for making applesauce.
+oranges
+  : Citrus!
+tomatoes
+  : There’s no “e” in&nbsp;tomatoe.</p>
+<p>Again, text is indented 4 spaces. (Put a blank line between each
+term/definition pair to spread things out&nbsp;more.)</p>
+<p>Here’s a “line&nbsp;block”:</p>
+<p>| Line one
+|   Line too
+| Line&nbsp;tree</p>
+<p>and images can be specified like&nbsp;so:</p>
+<p><img src="https://www.placecage.com/200/300" alt="example image" title="An exemplary image"></p>
+<p>Inline math equations go in like so: $\omega = d\phi / dt$. Display
+math should get its own line and be put in in&nbsp;double-dollarsigns:</p>
+<p>$$I = \int \rho R^{2}&nbsp;dV$$</p>
+<p>And note that you can backslash-escape any punctuation characters
+which you wish to be displayed literally, ex.: `foo`, *bar*,&nbsp;etc.</p>
+
         </div>
       </section>
       <footer class="wrap">

@@ -8,15 +8,15 @@
     <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900|Anonymous+Pro:400,700,400italic,700italic&amp;subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css">
-    <link rel="stylesheet" href="/docs_template/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <div class="container">
       <div class="nav-main">
         <div class="wrap">
           <ul class="nav-site nav-site-internal">
-            <li><a href="/docs_template/">Main</a></li>
-            <li><a href="/docs_template/articles/000-instalation/" class="active">Docs</a></li>
+            <li><a href="/">Main</a></li>
+            <li><a href="/articles/000-instalation/" class="active">Docs</a></li>
           </ul><span class="nav-docs-right">Kontaktai:</span>
         </div>
       </div>
@@ -25,25 +25,40 @@
           <div class="nav-docs section">
             <h5>Instaliation</h5>
             <ul>
-              <li><a href="/docs_template/articles/000-instalation/">instruction</a></li>
+              <li><a href="/articles/000-instalation/">instruction</a></li>
             </ul>
           </div>
           <div class="nav-docs section">
             <h5>MD syntax</h5>
             <ul>
-              <li><a href="/docs_template/articles/001-md-syntax-examples/">MD syntax examples 1</a></li>
-              <li><a href="/docs_template/articles/002-md-syntax-2/" class="active">MD syntax highlighting code</a></li>
+              <li><a href="/articles/001-md-syntax-examples/">MD syntax examples 1</a></li>
+              <li><a href="/articles/002-md-syntax-2/" class="active">MD syntax highlighting code</a></li>
             </ul>
           </div>
           <div class="nav-docs section">
             <h5>Group 2</h5>
             <ul>
-              <li><a href="/docs_template/articles/013-example-2/">New group</a></li>
+              <li><a href="/articles/013-example-2/">New group</a></li>
             </ul>
           </div>
         </div>
         <div class="inner-content">
           <h1>MD syntax highlighting code</h1>
+          <div class="subHeader"></div><h2 id="code">Code</h2>
+<p><span class="caps">SQL</span>:</p>
+<pre><code class="lang-sql"><span class="keyword"><span class="caps">SELECT</span></span> *
+<span class="keyword"><span class="caps">FROM</span></span> kaka.kaka_table@kaka t
+<span class="keyword">where</span> t.kaka_id <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">null</span>;
+</code></pre>
+<p><span class="caps">BASH</span>:</p>
+<pre><code class="lang-bash">npm i
+<span class="built_in">cd</span> ./dirname
+</code></pre>
+<p><span class="caps">BASIC</span>:</p>
+<pre><code>function test() {
+  console.log(&quot;notice the blank line before this function?&quot;);
+}
+</code></pre>
         </div>
       </section>
       <footer class="wrap">
